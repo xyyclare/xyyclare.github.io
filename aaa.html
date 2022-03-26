@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>官网模板</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .header{
+            position: fixed;
+            width: 100%;
+            background-image: url("v1.jpg");
+            height: 700px;
+         } 
+        .top{
+            background-color: rgb(24, 80, 153);
+            height: 50px;
+            z-index: 99999;
+            position: fixed;
+            width: 100%;
+            color: aliceblue;
+            margin-top: 0;
+        }
+        .bottom{
+            height: 40px;
+            background-color: black;
+            margin: 500px 200px 10px;
+        }
+        .main1 {
+            display: flex;
+            justify-content: flex-start;
+            /* align-items: center; */
+            flex-direction: row;
+            /* height: 350px;
+            background-color: aliceblue;
+            position: relative; */
+        }
+        .back{
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: row;
+            height: 600px;
+            background-color: aliceblue;
+            position: relative;
+            margin-top: 1000px;
+            width: 100%;
+        }
+        .item{
+            width: 300px;
+            height: 350px;
+            background-color: aquamarine;
+            margin: 100px 15px 15px 10px;
+            z-index: 99;
+        }
+        .item:hover{
+            background-color: rgb(212, 28, 28);
+        }
+        #thebox1{
+            width: 600px;
+            margin: 100px 15px 10px 0;
+        }
+        #thebox2{
+            margin-right: 0;
+        }
+        .main2{
+            display: flex;
+            justify-content:  space-between;
+            flex-direction: row;
+        }
+        .item1{
+            width: 300px;
+            height: 350px;
+            background-color: rgb(54, 223, 32);
+            margin: 15px 15px 10px;
+            z-index: 99;
+        }
+        .item1:hover{
+            background-color: rgb(212, 40, 40);
+        }
+        #thebox3{
+            margin-left: 0;
+        }
+        #thebox4{
+            width: 650px;
+            margin: 15px 0 10px 15px;
+        }
+         .main3{
+            display: flex;
+            justify-content:  space-between;
+            flex-wrap: wrap;
+        } 
+        .item3{
+            width: 600px;
+            height: 100px;
+            margin: 15px 15px 15px 0;
+            background-color: rgb(168, 68, 135);
+            z-index: 99;
+        }
+        .item3:hover{
+            background-color: rgb(216, 47, 47);
+        }
+        #thebox5{
+            margin: 15px 0 0 15px;
+        }
+        .container1{
+            margin: 0 auto;
+            width: 400px;
+            height: 550px;
+            background-color: rgb(192, 155, 35) ;
+            position: relative;
+
+        }
+        .container1:hover{
+            background-color: rgb(216, 47, 47);
+        }
+        .left{
+            float: left;
+            width: 400px;
+            height: 70px;
+            margin: 15px 20px 15px 0;
+            background-color: rgb(192, 155, 35);
+            position: relative;
+        }
+        .left:hover{
+            background-color: rgb(209, 41, 41);
+        }
+        .right{
+            float: right;
+            width: 200px;
+            height: 70px;
+            background-color: rgb(192, 155, 35);
+            margin: 15px 0 15px 15px;
+            position: relative;
+        }
+        .right:hover{
+            background-color: rgb(230, 39, 39);
+        }
+        .back1{
+            display: flex;
+            justify-content:  space-between;
+            flex-direction: row;
+            height: 550px;
+            background-color: aliceblue;
+            position: relative;
+            width: 100%;
+        }
+        .back3{
+            display: flex;
+            justify-content:  space-between;
+            flex-wrap: wrap;
+            height: 700px;
+            background-color: aliceblue;
+            position: relative;
+            width: 100%;
+        }
+        .back4{
+            height: 900px;
+            background-color: aliceblue;
+            position: relative;
+            width: 100%;
+            margin-top: 0;
+        }
+        .floot{
+            clear: both;
+            background-color: steelblue;
+            height: 150px;
+            width: 100%;
+            margin-top: 200px;
+        }
+    </style>
+</head>
+<body>   
+    <div class="top">  .  学生    |   教工   |   校友   |   访客   </div>
+    <div class="header">
+        <div class="container"> 
+            <div class="bottom"></div>
+        </div>
+    </div>
+    <div class="main1">
+        <div class="back">
+            <div class="item"id="thebox1"></div>
+            <div class="item"></div>
+            <div class="item"id="thebox2"></div>
+        </div>
+    </div>
+    <div class="main2">
+        <div class="back1">
+            <div class="item1"id="thebox3"></div>
+            <div class="item1"></div>
+            <div class="item1"id="thebox4"></div>
+        </div>
+
+    </div>
+    <div class="main3">
+        <div class="back3">
+            <div class="item3"></div>
+            <div class="item3"id="thebox5"></div>
+            <div class="item3"></div>
+            <div class="item3"id="thebox5"></div>
+            <div class="item3"></div>
+            <div class="item3"id="thebox5"></div>
+            <div class="item3"></div>
+            <div class="item3"id="thebox5"></div>
+            <div class="container2"></div>
+        </div>
+
+    </div>
+    <div class="main4">
+        <div class="back4">
+            <div class="left"></div>
+            <div class="right"></div>
+            <div class="right"></div>
+            <div class="left"></div>
+            <div class="right"></div>
+            <div class="right"></div>
+            <div class="left"></div>
+            <div class="right"></div>
+            <div class="right"></div>
+            <div class="left"></div>
+            <div class="right"></div>
+            <div class="right"></div>
+            <div class="left"></div>
+            <div class="right"></div>
+            <div class="right"></div>
+            <div class="left"></div>
+            <div class="right"></div>
+            <div class="right"></div>
+            <div class="container1"></div>
+            <div class="floot"></div>
+        </div>
+    </div>
+</body>
+</html>
