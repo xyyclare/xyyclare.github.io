@@ -9,128 +9,306 @@
         body{
             margin: auto;
         }
-        .container{
-            width: 800px;
+        .part{
+            background-image: url("15.jpg");
+            background-size: cover;
+            /* width: 100%; */
+            animation-name: example;
+            animation-duration: 6s;
+            animation-iteration-count: infinite;
+            display: flex;
+            flex-direction: column;
+        }
+        @keyframes example{
+            0%{background-image: url("15.jpg");}
+            25%{background-image: url("16.jpg");}
+            0%{background-image: url("17.jpg");}
+            50%{background-image: url("18.jpg");}
+        }
+        .box{
+            display: flex;
+            flex-direction: column;
+            width: 60%;
             margin: 0 auto;
-            background-image: url("br1.jpg");
             padding:20px;
+            transition: width 2s;
+            box-shadow: 1px 3px 5px 5px #110e0ede ;
+        }
+        .box:hover{
+            width: 65%;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .item{
+            display: flex;
+            margin-top: 50px;
+            justify-content: center;
+            /* flex-direction: column; */
+        }
+        .left{
+            display: flex;
+            margin-right: 60px;
+            transition: 1s;
+            
+        }
+        .left:hover{
+            transform: scale(1.2);
+        }
+        .right{
+            display: flex;
+            outline-style: inset;
+            flex-direction: column;
+            /* align-items: center; */
+            justify-content: center;
+            outline-color: aliceblue;
+            width: 40%;
+            height: 140px;
+            margin-top: 20px;
+            transition: 1s;
+        }
+        .right:hover{
+            transform: scale(1.2);
+        }
+        .card1{
+            display: flex;
+            margin: 10px 20px 10px 20px;
+            font-size: 130%;
+        }
+        a:hover{
+            color: rgb(47, 106, 159);
+            text-shadow: 2px 2px 5px rgb(232, 20, 20);
+
+        }
+        .item1{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+           
+        }
+        .item2{
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+            flex-direction: column;
+        }
+        .item3{
+            align-items: center;
+            flex-direction: column;
+            margin-top: 20px;
+            display: flex;
         }
         h1{
-            padding: 20px;
-            margin: 0px;
+            padding: 30px;
+            margin-left: 100px;
             text-align: center;
+            font-size: 300%;
+            color: aliceblue;
+            transition: 2s;
         }
         h1:hover{
-            display: none;
+            transform: scale(1.5);
         }
         .theimg{
+            margin-left: 50px;
+            /* margin-top: 50px; */
             text-align: center;
+            transition: 2s;
         }
-        h2{
+        .theimg:hover{
+            transform: rotate(360deg);
+            /* box-shadow:5px 3px 5px 3px #110e0ede ; */
+        }
+        a{
+            text-decoration: none;
+            /* text-align: center; */
+            color: aliceblue;
+            font-family: cursive;
+            text-shadow: 2px 2px 5px rgb(26, 168, 59);
+
+        }
+        table{
+            text-align: center;
+            width: 90%;
+        }
+        td{
+            color: rgb(228, 236, 229);
+            font-size: 120%;
+            font-family: cursive;
+            text-shadow: 1px 1px 2px black, 0 0 25px rgba(176, 167, 49, 0.952), 0 0 5px rgb(158, 160, 31);
+        }
+        ul{
+            color: rgb(213, 223, 214);
+            font-size: 150%;
+            font-family: cursive;
+            outline-style: inset;
+            text-shadow: 1px 1px 2px black, 0 0 25px rgba(86, 204, 59, 0.952), 0 0 5px rgb(33, 201, 44);
+        }
+        ol{
+            color: rgb(188, 190, 178);
+            font-size: 118%;
+            font-family: cursive;
+            transition: 1s;
+        }
+        ol:hover{
+            text-shadow: 1px 1px 2px black, 0 0 25px rgba(36, 129, 145, 0.952), 0 0 5px rgb(55, 179, 171);
+            transform: scale(1.25);
+        }
+        .card3{
+            display: flex;
+            /* justify-content: center; */
             background-color: rgb(63, 122, 170);
             padding-left: 10px ;
             line-height: 40px;
             color: rgb(148, 126, 53);
+            font-size: 180%;
+            font-family: cursive;
             border-radius: 10px;
             box-shadow: inset 0px 2px 5px  #332f2f;
+            transition: 1s;
+            width: 95%;
         }
-        a{
-            text-decoration: none;
-            text-align: center;
-            
+        .card3:hover{
+            transform: scale(1.1);
+            background-color: aliceblue;
         }
-        h3:hover{
-            color: rgb(159, 172, 172);
-            
+        .card4{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        transition: 0.5s;
         }
-        h2:hover{
-           background-color: aliceblue;
+        .card4:hover{
+            transform: scale(1.1);
         }
-        table{
-            text-align: center;
+        .card5{
+            margin-top: 10px;
+            display: flex;
+        }
+        .card6{
+            color: rgb(214, 221, 220);
+            margin-top: 20px;
+            font-family: cursive;
+            font-size: 120%;
+            text-indent: 1cm;
+            transition: 1s;
+            text-shadow: 2px 2px 5px rgb(232, 20, 20);
 
         }
-        td{
-            color: rgb(228, 236, 229);
-        }
-        ul{
-            color: rgb(213, 223, 214);
-        }
-        ol{
-            color: rgb(188, 190, 178);
-        }
-        p{
-            color: aliceblue;
-            margin: 10px;
+        .card6:hover{
+            transform: scale(1.1);
+            text-shadow: 2px 2px 5px rgb(43, 157, 20);
         }
     </style>
 </head>
-<body background="v1.jpg">
-    
- <div class="container">
-    <h1>Clare</h1>
-     <div class="theimg">
-        <img src="people.jpg" alt="" width="200.px"height="200.px">
-     </div>
-    <hr>
-    <ul>
-        <li> <b> 性别：</b>女</li>
-        <li> <b> 电话：</b>18136326456</li>
-        <li> <b> 邮箱：</b>2356242526@qq.com </li>
-        <li> <b> 生日：</b>2020.09.09</li>
-        <li> <b> 兴趣：</b>听歌，画画</li>
-        
-    </ul>
-    <hr>
-    <h2>教育背景Education</h2>
-    <table border="1" cellspacing="0"style="color: #000;width: 100%;" >
-        <tr >
-            <td>时间</td>
-            <td>学校</td>
-            <td>职务</td>
-        </tr>
-        <tr>
-            <td>2008</td>
-            <td>小学</td>
-            <td>学生</td>
-        </tr>
-        <tr>
-            <td>2013</td>
-            <td>初中</td>
-            <td>组长</td>
-        </tr>
-        <tr>
-            <td>2017</td>
-            <td>高中</td>
-            <td>学生</td>
-        </tr>
-        <tr>
-            <td>2020</td>
-            <td> 上海对外经贸大学</td>
-            <td>文体委员</td>
-        </tr>
-
-    </table>
-    <hr>
-    <h2>学习经验</h2>
-    <ol>
-        <li>首先，应该脚踏实地，勤奋刻苦</li>
-        <li>其次，我们要有一套适合自己的学习方法</li>
-        <li>对于课程来说，我们要做到课前预习，课上认真听讲，课后好好复习！</li>
-        <li>最后，要相信自己！！！</li>
-    </ol>
-    <hr>
-    <h2>自我介绍</h2>
-    <p>
-        我是来自上海对外经贸大学信息管理与信息系统专业的学生，目前已接触并掌握C语言，java等课程语言。
-    </p>
-    <hr>
-    <a href="form.html" style="color: rgb(178, 128, 207);"> <h3>请点击此链接：登录界面</h3> </a:href>
-    <hr>
-    <a href="aaa.html"><h3>
-        请点击此链接：学校官网
-    </h3></a:href>
- </div>
+<body >
+    <div class="part">
+        <div class="box">
+            <div class="container">
+                <h1>Clare</h1>
+                <div class="theimg">
+                    <img src="people.jpg" alt="" width="210.px"height="220.px">
+                </div>
+            </div>
+            <div class="hh">
+                <hr>
+            </div> 
+            <div class="item">
+                <div class="left">
+                    <ul>
+                        <li> <b> 性别：</b>女</li>
+                        <li> <b> 电话：</b>18136326456</li>
+                        <li> <b> 邮箱：</b>2356242526@qq.com </li>
+                        <li> <b> 生日：</b>2020.09.09</li>
+                        <li> <b> 兴趣：</b>听歌，画画</li>
+                        
+                    </ul>
+                </div>
+                <div class="right">
+                    <div class="card1">
+                        <a href="bbb.html">学校官网 </a>
+                    </div>
+                    <div class="card1">
+                        <a href="form.html" > 登录界面 </a>
+                    </div>
+                </div>
+            </div>
+                
+            <div class="hh">
+                <hr>
+            </div> 
+            <div class="item1">
+                <div class="card3">
+                    <b>教育背景Education</b> 
+                </div>
+                <div class="card4">
+                    <table border="1" cellspacing="0" >
+                        <tr >
+                            <td>时间</td>
+                            <td>学校</td>
+                            <td>职务</td>
+                        </tr>
+                        <tr>
+                            <td>2008</td>
+                            <td>小学</td>
+                            <td>学生</td>
+                        </tr>
+                        <tr>
+                            <td>2013</td>
+                            <td>初中</td>
+                            <td>组长</td>
+                        </tr>
+                        <tr>
+                            <td>2017</td>
+                            <td>高中</td>
+                            <td>学生</td>
+                        </tr>
+                        <tr>
+                            <td>2020</td>
+                            <td> 上海对外经贸大学</td>
+                            <td>文体委员</td>
+                        </tr>
+                
+                    </table>
+                </div>
+            </div>   
+            <div class="hh">
+                <hr>
+            </div> 
+            <div class="item2">
+                <div class="card3">
+                    <b>学习经验</b>
+                </div>
+                <div class="card5">
+                    <ol>
+                        <li>首先，应该脚踏实地，勤奋刻苦</li>
+                        <li>其次，我们要有一套适合自己的学习方法</li>
+                        <li>对于课程来说，我们要做到课前预习，课上认真听讲，课后好好复习！</li>
+                        <li>最后，要相信自己！！！</li>
+                    </ol>
+                </div> 
+            </div>
+            <div class="hh">
+                <hr>
+            </div> 
+            <div class="item3">
+                <div class="card3">
+                    <b>自我介绍</b>
+                </div>
+                <div class="card6">
+                    我是来自上海对外经贸大学信息管理与信息系统专业的学生，目前已接触并掌握C语言，java等课程语言。
+                </div>
+                
+            </div>  
+        </div>
+              
+    </div>
+ 
     
 </body>
 </html>
