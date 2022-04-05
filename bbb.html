@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         body{
+            margin: 0;
+            padding: 0;
+        }
+        .part{
+            display: flex;
+        }
+        .header{
+            background-image: url(9.png);
+            background-size: cover;
+            position: fixed;
+            width: 100%;
+            height: 700px;
+            display: flex;
+            flex-direction: column;
+        }
+        .top1{
+            height: 150px;
+            width: 100%;
+            background: linear-gradient(to bottom, #2484d3, #8b58ac00);
+            /* opacity: 0.2; */
+            display: flex;
+            flex-direction: column;
+        }
+        .text1{
+            height: 70px;
+            display: flex;
+            justify-content: center;
+            gap: 600px;
+        }
+        .card1{
+            height: 40px;
+            margin-top: 20px;
+            display: flex;
+            gap: 27px;
+
+        }
+        .word{
+            flex: auto;
+            color: aliceblue;
+            text-align: center;
+            font-size: 100%;
+            line-height: 50px;
+        }
+        .text2{
+            display: flex;
+            justify-content: center;
+            gap: 65px;
+            height: 80px;
+        }
+        .card2{
+            color: aliceblue;
+            text-align: center;
+            font-size: 110%;
+            line-height: 90px;
+        }
+        .bottom{
+            display: flex;
+            justify-content: center;
+            gap: 5px;
+            height: 50px;
+            width: 100%;
+            margin-top: 480px;
+
+        }
+        .floot{
+            height: 50px;
+            background: linear-gradient(-45deg, #8a58ac, #ca677f);
+            width: 17%;
+            color: aliceblue;
+            line-height: 47px;
+            text-align: center;
+            font-size: 120%;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+       .floot:hover{
+           background: linear-gradient(-45deg,#206394, #1678c9);
+       }
+       #floot1:hover{
+        background: linear-gradient(-45deg,#206394, #1678c9);
+       }
+       #floot2:hover{
+        background: linear-gradient(-45deg,#206394, #1678c9);
+       }
+       #floot3:hover{
+        background: linear-gradient(-45deg,#206394, #1678c9);
+       }
+       #floot4:hover{
+        background: linear-gradient(-45deg,#206394, #1678c9);
+       }
+        #floot1{
+            background: linear-gradient(-45deg,  #2a6fbe,#8a58ac);
+        }
+        #floot2{
+            background: linear-gradient(-45deg, #35aab3, #2a6fbe);
+        }
+        #floot3{
+            background: linear-gradient(-45deg, #bec92d, #35aab3);
+        }
+        #floot4{
+            background: linear-gradient(-45deg, #be9b38,  #bec92d);
+        }
+        .main{
+            display: flex;
+            flex-direction: column;
+            background-color: rgb(255, 255, 255);
+            height: 2810px;
+            width: 100%;
+            margin-top: 700px;
+            z-index: 99;
+        }
+        .item{
+            /* display: flex; */
+            /* gap: 10px; */
+            background-color: rgb(247, 241, 241);
+            margin-top: 10px;
+            height: 150px;
+            width: 100%;
+        }
+        #text11{
+            background-color: #2a6fbe;
+        }
+        #text22{
+            justify-content:flex-end;
+            /* position: absolute; */
+            gap: 40px;
+        }
+        #c2{
+            color: #0f130e;
+        }
+        .item1{
+            display: flex;
+            flex-direction: column;
+            /* background-color: rgb(23, 99, 165); */
+            margin-top: 10px;
+            height: 550px;
+            width: 100%;
+        }
+        .box1{
+            /* background-color: #35aab3; */
+            height: 100px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        .word1{
+            /* background-color: #37b333; */
+            color: #2a6fbe;
+            font-size: 200%;
+            font-family:cursive;
+            line-height: 100px;
+            text-align: center;
+        }
+        .box2{
+            /* background-color: #24838a; */
+            height: 430px;
+            width: 100%;
+            margin-top: 10px;
+            display: flex;
+            gap: 30px;
+        }
+        .card3{
+            /* background-color: #9bce24; */
+            height: 430px;
+            flex: auto;
+            display: flex;
+            gap: 30px;
+            box-shadow:3px 3px 3px 3px #c8c8c8 ;
+            overflow: hidden;
+            position: relative;
+        }
+        #c3:hover{
+            background-color: #a52b2b;
+            transition: 1s;
+        }
+        .b1{
+            display:block;
+            background-image: url("9.png");
+            height: 100%;
+            width: 100%;
+            transition: all 1s;
+            
+        }
+        .b1:hover{
+            transform:scale(1.2) ;
+            
+        }
+        .tx{
+            margin-top: 360px;
+            display: flex;
+            width: 100%;
+            height: 70px;
+            background-color: #2484d37c;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            font-size: 220%;
+            font-family: cursive;
+        }
+        .card4{
+            /* background-color: #9f32c0af; */
+            height: 430px;
+            flex:auto;
+            box-shadow:3px 3px 3px 3px #c8c8c8 ;
+            
+        }
+        .card4:hover{
+            background-color: #a52b2b;
+            transition: 1s;
+        }
+        .b2{
+            display: flex;
+            height: 210px;
+            width: 100%;
+            overflow: hidden;
+        }
+        .pi{
+            display: flex;
+            height: 210px;
+            width: 100%;
+            background-image: url("10.png");
+            transition: all 1s;
+        }
+        .pi:hover{
+            transform: scale(1.2);
+        }
+        #pi2{
+            background-image: url("11.png");
+        }
+        .item2{
+            /* background-color: rgb(23, 99, 165); */
+            margin-top: 10px;
+            height: 430px;
+            width: 100%;
+            display: flex;
+            gap: 30px;
+        }
+        .card5{
+            /* background-color: #24838a; */
+            height: 430px;
+            flex: auto;
+            display: flex;
+            gap: 20px;
+            box-shadow:3px 3px 3px 3px #c8c8c8 ;
+            overflow: hidden;
+            position: relative;
+        }
+        #c5:hover{
+            background-color: #a52b2b;
+            transition: 1s;
+        }
+        .card6{
+            /* background-color: #37b333; */
+            height: 430px;
+            flex: auto;
+            box-shadow:3px 3px 3px 3px #c8c8c8 ;
+        }
+        .card6:hover{
+            background-color: #a52b2b;
+            transition: 1s;
+        }
+        .b3{
+            display: flex;
+            width: 100%;
+            height: 210px;
+            overflow: hidden;
+        }
+        .pi3{
+            display: flex;
+            width: 100%;
+            height: 210px;
+            background-image: url("7.png");
+            transition: all 1s;
+        }
+        .pi3:hover{
+            transform: scale(1.2);
+        }
+        #pi4{
+            background-image: url("2.jpg");
+        }
+        .b4{
+            display: flex;
+            width: 100%;
+            height: 430px;
+            background-image: url("7.png");
+            transition: all 1s;
+        }
+        .b4:hover{
+            transform: scale(1.2);
+        }
+        .item3{
+            display: flex;
+            flex-direction: column;
+            /* background-color: rgb(23, 99, 165); */
+            margin-top: 10px;
+            height: 700px;
+            width: 100%;
+        }
+        .box3{
+            /* background-color: #37b333; */
+            height: 120px;
+            width: 100%;
+            display: flex;
+            gap: 30px;
+        }
+        .box4{
+            /* background-color: #6929df98; */
+            height: 470px;
+            margin-top: 10px;
+            width: 100%;
+            display: flex;
+            gap: 50px;
+            
+        }
+        .card7{
+            /* background-color: #24838a; */
+            height: 110px;
+            flex: auto;
+            font-family: cursive;
+            font-size: 200%;
+            text-align: center;
+            line-height: 120px;
+        }
+        .card8{
+            /* background-color: #be9b38; */
+            height: 470px;
+            flex: auto;
+            display: flex;
+            flex-direction: column;
+        }
+        .card9{
+            /* background-color: #9bce24; */
+            flex: auto;
+            height: 30px;
+            margin-bottom: 10px;
+            box-shadow:3px 3px 3px 3px #c8c8c8 ;
+        }
+        .card9:hover{
+            background-color: #a52b2b;
+            transition: 1s;
+        }
+        .item4{
+            display: flex;
+            flex-direction: column;
+            /* background-color: rgb(23, 99, 165); */
+            margin-top: 10px;
+            height: 700px;
+            width: 100%;
+        }
+        .box5{
+            /* background-color: #24838a; */
+            height: 120px;
+            width: 100%;
+            display: flex;
+            gap: 20px;
+        }
+        .card10{
+            /* background-color: #b9b030bd; */
+            height: 120px;
+            flex: auto;
+            font-size: 200%;
+            font-family: cursive;
+            /* line-height: 130px;
+            text-align: center; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: rgb(26, 90, 154);
+        }
+        .box6{
+            /* background-color: #24838aa2; */
+            height: 500px;
+            margin-top: 20px;
+            width: 100%;
+            display: flex;
+            gap: 20px;
+        }
+        .card11{
+            /* background-color: #858f28; */
+            height: 500px;
+            flex: auto;
+            display: flex;
+            flex-direction: column;
+            box-shadow:3px 3px 3px 3px #c8c8c8 ;
+        }
+        .card12{
+            /* background-color: #8a58ac; */
+            height: 100px;
+            margin-bottom: 10px;
+            box-shadow:3px 3px 3px 3px #c8c8c8 ;
+        }
+        .card12:hover{
+            background-color: #a52b2b;
+            transition: 1s;
+        }
+        /* #cc11:hover{
+            background-color: #a52b2b;
+            transition: 1s;
+        } */
+        #c11{
+            display: flex;
+            flex-direction: row;
+            width: 1px;
+            font-family: cursive;
+            font-size: 120%;
+        }
+        .box7{
+            /* background-color: #3b9b1e; */
+            flex: auto;
+            height: 500px;
+            display: flex;
+            flex-direction: column;
+        }
+        .card13{
+            /* background-color: #27c5c5; */
+            height: 90px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .card13:hover{
+            background-color: #a52b2b;
+            transition: 1s;
+        }
+        .item5{
+            /* display: flex; */
+            /* gap: 10px; */
+            background-color: rgb(23, 99, 165);
+            margin-top: 10px;
+            height: 220px;
+            width: 100%;
+        }
+        #w:hover{
+            text-decoration: overline;
+        }
+        .card2:hover{
+            text-decoration: underline;
+            color: #a52b2b;
+        }
+        .card7:hover{
+            color: #2484d3;
+        }
+        #cc11{
+            display: flex;
+            width: 5%;
+            margin-top: 0;
+        }
+        .v1{
+            margin-top: 0px;
+            width: 100%;
+            display: flex;
+            height: 340px;
+            /* background-color: #35aab3; */
+            background-color: #0f130e;
+        }
+        .v2{
+            margin-top: 10px;
+            display: flex;
+            width: 100%;
+            height: 150px;
+            justify-content: center;
+            align-items: center;
+            font-size: 220%;
+            font-family: cursive;
+            /* background-color: #2484d3; */
+        }
+        @media(max-width:800px){
+            .top1{
+                display: none;
+            }
+            .card1{
+                display: none;
+            }
+            .card2{
+                display: none;
+            }
+            #c3{
+                margin-right: 0px;
+            }
+            .card4{
+                width: 100%;
+            }
+            #cc3{
+               display: none; 
+            }
+            #cc5{
+                display: none;
+            }
+            #c8{
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="part">
+        <div class="header">
+            <div class="top1">
+                <div class="text1">
+                    <div class="card1">
+                        <div class="word"id="w">学生</div>
+                        <div class="word">|</div>
+                        <div class="word"id="w">教工</div>
+                        <div class="word">|</div>
+                        <div class="word"id="w">校友</div>
+                        <div class="word">|</div>
+                        <div class="word"id="w">访客</div>
+                    </div>
+                    <div class="card1">
+                        <div class="word"id="w">一网通办</div>
+                        <div class="word"id="w">邮箱</div>
+                        <div class="word"id="w">VPN</div>
+                        <div class="word"id="w">English</div>
+                    </div>
+                </div>
+                <div class="text2">
+                    <div class="card2">学校概况</div>
+                    <div class="card2">机构设置</div>
+                    <div class="card2">师资队伍</div>
+                    <div class="card2">科学研究</div>
+                    <div class="card2">人才培养</div>
+                    <div class="card2">招生就业</div>
+                    <div class="card2">国际交流</div>
+                    <div class="card2">公开事项</div>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="floot"id="f1">校园要闻</div>
+                <div class="floot"id="floot1">新闻快讯</div>
+                <div class="floot"id="floot2">媒体报道</div>
+                <div class="floot"id="floot3">专题网站</div>
+                <div class="floot"id="floot4">精彩影像</div>
+            </div>
+        </div>
+        <div class="main">
+            <div class="item">
+                <div class="text1"id="text11">
+                    <div class="card1">
+                        <div class="word"id="w">学生</div>
+                        <div class="word">|</div>
+                        <div class="word"id="w">教工</div>
+                        <div class="word">|</div>
+                        <div class="word"id="w">校友</div>
+                        <div class="word">|</div>
+                        <div class="word"id="w">访客</div>
+                    </div>
+                    <div class="card1">
+                        <div class="word"id="w">一网通办</div>
+                        <div class="word"id="w">邮箱</div>
+                        <div class="word"id="w">VPN</div>
+                        <div class="word"id="w">English</div>
+                    </div>
+                </div>
+                <div class="text2"id="text22">
+                    <div class="card2"id="c2">学校概况</div>
+                    <div class="card2"id="c2">机构设置</div>
+                    <div class="card2"id="c2">师资队伍</div>
+                    <div class="card2"id="c2">科学研究</div>
+                    <div class="card2"id="c2">人才培养</div>
+                    <div class="card2"id="c2">招生就业</div>
+                    <div class="card2"id="c2">国际交流</div>
+                    <div class="card2"id="c2">公开事项</div>
+                </div>
+            </div>
+            <div class="item1">
+                <div class="box1">
+                    <div class="word1">校园要闻</div>
+                </div>
+                <div class="box2">
+                    <div class="card3"id="c3">
+                        <div class="b1"></div>
+                        <div class="tx">
+                            文字
+                        </div> 
+                    </div>
+                    <div class="card3"id="cc3">
+                        <div class="card4">
+                            <div class="b2">
+                                <div class="pi"></div>
+                            </div>
+                        </div>
+                        <div class="card4">
+                            <div class="b2">
+                                <div class="pi"id="pi2"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item2">
+                <div class="card5"id="cc5">
+                    <div class="card6">
+                        <div class="b3">
+                            <div class="pi3"></div>
+                        </div>
+                    </div>
+                    <div class="card6">
+                        <div class="b3">
+                            <div class="pi3"id="pi4"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card5"id="c5">
+                    <div class="b4"></div>
+                    <div class="tx">
+                        文字
+                    </div> 
+                </div>
+            </div>
+            <div class="item3">
+                <div class="box3">
+                    <div class="card7">新闻快讯</div>
+                    <div class="card7">媒体报道</div>
+                </div>
+                <div class="box4">
+                    <div class="card8">
+                        <div class="card9"></div>
+                        <div class="card9"></div>
+                        <div class="card9"></div>
+                        <div class="card9"></div>
+                    </div>
+                    <div class="card8"id="c8">
+                        <div class="card9"></div>
+                        <div class="card9"></div>
+                        <div class="card9"></div>
+                        <div class="card9"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="item4">
+                <div class="box5">
+                    <div class="card10">科研动态</div>
+                    <div class="card10">精彩影像</div>
+                    <div class="card10">专题网站</div>
+                </div>
+                <div class="box6">
+                    <div class="card11">
+                        <div class="card12"></div>
+                        <div class="card12"></div>
+                        <div class="card12"></div>
+                        <div class="card12"></div>
+                        <div class="card12"></div>
+                    </div>
+                    <div class="card11"id="cc11">
+                        <div class="v1">
+                            <video src="radio.mp4"controls=""width="100%"height="340px"></video>
+                        </div>
+                        <div class="v2">
+                            文字
+                        </div>
+                    </div>
+                    <div class="card11"id="c11">
+                        <div class="box7">
+                            <div class="card13">文明在线</div>
+                            <div class="card13">图书馆</div>
+                            <div class="card13">党代会专题</div>
+                            <div class="card13">党史学习教育</div>
+                            <div class="card13">校庆网</div>
+                            <div class="card13">就业服务</div>
+                        </div>
+                        <div class="box7">
+                            <div class="card13">人才招聘</div>
+                            <div class="card13">易班</div>
+                            <div class="card13">迎新网</div>
+                            <div class="card13">招标投标</div>
+                            <div class="card13">信息公开网</div>
+                            <div class="card13">语言文字</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item5"></div>
+        </div>
+    </div>
+</body>
+</html>
